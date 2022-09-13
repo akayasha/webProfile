@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <ul class="top-nav">
+            <li><a href="#"> Home </a> </li>
+            <li><a href="#"> Portfolio </a> </li>
+            <li><a href="#"> About Me </a> </li>
+        </ul>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" ></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Me</a></li>
+             </ul>
+        </div>
+        <div id="main" class="button-nav">
+            <button class="openbtn" onclick="doAction() ">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./../img/leafbw.JPG">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img_snow_wide.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img_mountains_wide.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    </main>
+
+    <!-- ASSIDE -->
+    <aside>
+        <div class="sideContent">
+            <div class="card">
+                <img class="profile" src="./../img/profile.jpg" alt="proilepic" />
+                <h1>Firman Ismail H</h1>
+                <p class="title">Full Stack Developer</p>
+                <p class="titlw">Amateur Photographer</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-dribbble"></i></a> 
+                    <a href="#"><i class="fa fa-twitter"></i></a>  
+                    <a href="#"><i class="fa fa-linkedin"></i></a>  
+                    <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+        </div>
+    </aside>
+</body>
+</html>
